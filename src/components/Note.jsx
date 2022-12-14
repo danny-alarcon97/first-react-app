@@ -3,7 +3,9 @@ import React from "react";
 //2. Implement the delete note functionality.
 
 function Note(props) {
-  function handleClick() {}
+  function handleClick() {
+    props.onDelete(props.id);
+  }
 
   return (
     <div className="note">
